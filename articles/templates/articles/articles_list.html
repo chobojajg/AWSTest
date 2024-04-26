@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API PJT</title>
+</head>
+<body>
+    <h1>Article List</h1>
+    <hr><br>
+
+    {% for article in articles %}
+        <h3>title: {{ article.title }}</h3>
+        <p>content: {{ article.content }}</p>
+        <p>created_at: {{ article.created_at }}</p>
+        <p>updated_at: {{ article.updated_at }}</p>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
